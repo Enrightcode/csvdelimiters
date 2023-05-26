@@ -1,9 +1,10 @@
 with open ('10_02_us.csv', 'r') as f:
   data = list(csv.DictReader(f, delimiter='\t'))
 primes = []
-  for number in range(2,99999):
-   if number % factor == 0:
-      break
+for number in range(2,99999):
+   for factor in range(2, int(number**0.5)):
+      if number % factor == 0:
+          break
  else:
   primes.append(number)
   
