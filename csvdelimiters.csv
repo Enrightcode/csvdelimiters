@@ -13,5 +13,5 @@ len(data)
 with open('10_02_ma_prime.csv','w') as f:
   writer = csv.writer(f)
   for row in data:
-    writer.writerow([row['place name'], row['county']]}
+    writer.writerow([row['place name'], row['county']])
     
